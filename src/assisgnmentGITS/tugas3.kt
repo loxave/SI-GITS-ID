@@ -4,22 +4,6 @@ import java.util.*
 
 fun main() {
 
-//    var sepeda = 1
-//    val anggota = 100
-
-//    while (sepeda <= 100) {
-//        if (sepeda <= anggota) {
-//            println("Silahkan ambil sepedanya di depan")
-//            sepeda--
-//            break
-//        } else if (sepeda >= anggota) {
-//            println("Maaf, stok sepeda cuma dikit, mohon menunggu tahun depan ")
-//        } else {
-//            println("Gak ada sepeda adanya permen")
-//
-//        }
-//
-//    }
 
     val inputScanner = Scanner(System.`in`)
     val kelasA: Int
