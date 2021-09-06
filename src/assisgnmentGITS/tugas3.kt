@@ -12,8 +12,7 @@ fun main() {
     print("Jumlah Anak: ")
     kelasA = inputScanner.nextInt()
     println(kelasA)
-
-
+    
     while (anak <= 49) {
         ++anak
         if (anak % 2 == 0) {
@@ -24,7 +23,5 @@ fun main() {
         } else {
             println("Kamu anak mana?")
         }
-
     }
-
 }
