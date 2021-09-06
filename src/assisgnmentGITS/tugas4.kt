@@ -16,23 +16,41 @@ dan mencetak value menggunakan lambda. **/
 
 fun main() {
 
-    var arrFruitList = arrayListOf<String>("Pineapple", "Pear", "Orange", "Watermelon")
+    fun tugas4() {
+        val arrFruitList = arrayListOf("Pineapple", "Pear", "Orange", "Watermelon")
 
-    arrFruitList[0] = "Apple"
-    arrFruitList.add(4, "Avocado")
-    for (item in arrFruitList) {
-        println("Result : $item")
+        println("---------Using For---------")
+        arrFruitList[0] = "Apple"
+        arrFruitList.add(4, "Avocado")
+        for (item in arrFruitList) {
+            print(" $item\n")
+        }
+        println("---------Using While Loop---------")
+        var count = 0
+        while (arrFruitList.size > count) {
+            println("Result: $arrFruitList")
+            count++
+        }
+
+        println("Lastly, the result must be using Lambda")
+        println("---------Using Lambda---------")
+        val lambdaFruit: (String) -> String = { arrFruitList: String ->
+
+            val result = arrFruitList
+            println(result).toString()
+
+        }
+
+        lambdaFruit("Result: $arrFruitList")
     }
-
-    while (true) {
-
-        println("ArrayList using while")
-        arrFruitList.add()
-
-    }
-
-
+    tugas4()
 }
+
+
+
+
+
+
 
 
 
