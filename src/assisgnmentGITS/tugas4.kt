@@ -23,7 +23,9 @@ fun main() {
         //dan mencetak berdasarkan angka awal yang dimulai dari 0 -> 1 -> 2 -> 3 dan seterusnya
 
         println("---------Using For---------")
+        //Mengganti isi variable yang berada pada variable arrFruitList urutan ke-0
         arrFruitList[0] = "Apple"
+        //Menambahkan isi variable pada urutan ke-4
         arrFruitList.add(4, "Avocado")
         for (item in arrFruitList) {
             print(" $item\n")
