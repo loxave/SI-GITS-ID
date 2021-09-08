@@ -15,29 +15,30 @@ import java.util.*
 
 fun main() {
 
-//    val number1: Double
-//
-//    val writeANumber = Scanner(System.`in`)
-//
-//    println("Masukkan berat badan = ")
-//    number1 = writeANumber.nextDouble()
+    val yourBB = nilaiBulatBB()
+    val yourTB = nilaiBulatTB()
 
-    val yourBB = nilaiBulat()
     val minimalBB = 59.6
+    val minimalTB = 168
     yourBB.beratBadan = 59.8
-    // yourBB.actualBB = 55.8
+    yourTB.tinggiBadan = 169
 
-    if (yourBB.beratBadan >= minimalBB) {
-        println("berat badan Gal Gadot = ${yourBB.beratBadan.toInt()}")
-        // println("Gal Gadot: actual age = ${yourBB.actualBB.toInt()}")
-        println("Selamat anda lolos masuk TNI")
+    if (yourBB.beratBadan > minimalBB && yourTB.tinggiBadan > minimalTB) {
+        repeat(2) {
+            println("Selamat anda berhasil lolos test final")
+        }
+        println("dengan rincian nilai: ")
+        println("berat badan  = ${yourBB.beratBadan.toInt()}")
+        println("berat badan  = ${yourTB.tinggiBadan}")
+
     } else {
-        println("Maaf anda belum lolos masuk TNI")
+        repeat(3) {
+            println("Maaf anda belum lolos masuk TNI")
+        }
     }
 }
 
-class nilaiBulat {
-
+class nilaiBulatBB {
     var beratBadan: Double = 59.8
         get() = field
         set(value) {
@@ -48,9 +49,20 @@ class nilaiBulat {
             else
                 value - 3
         }
-//
-//    var actualBB: Double = 0.0
+}
 
+class nilaiBulatTB {
+
+    var tinggiBadan: Int = 169
+        get() = field
+        set(value) {
+            field = if (value > 168)
+                169
+            else if (value < 168)
+                167
+            else
+                0
+        }
 }
 
 
