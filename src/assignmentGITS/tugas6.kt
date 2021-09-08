@@ -15,6 +15,7 @@ import java.util.*
 
 fun main() {
 
+    //panggil masing-masing class
     val yourBB = nilaiBulatBB()
     val yourTB = nilaiBulatTB()
 
