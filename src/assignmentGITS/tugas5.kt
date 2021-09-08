@@ -25,7 +25,7 @@ fun main() {
 
     if (yourBB.beratBadan > minimalBB && yourTB.tinggiBadan > minimalTB) {
         repeat(2) {
-            println("Selamat anda berhasil lolos test final")
+            println("Selamat anda berhasil lolos test!!")
         }
         println("dengan rincian nilai: ")
         println("berat badan  = ${yourBB.beratBadan.toInt()}")
@@ -33,14 +33,16 @@ fun main() {
 
     } else {
         repeat(3) {
-            println("Maaf anda belum lolos masuk TNI")
+            println("Maaf anda belum lolos test ")
         }
     }
 }
 
 class nilaiBulatBB {
     var beratBadan: Double = 59.8
+        //pada method get ada value field. field adalah value dari variable tinggiBadan
         get() = field
+        // pada method set berisi value, yang mana value didapat dari field itu sendiri
         set(value) {
             field = if (value >= 59.6)
                 60.0
@@ -54,7 +56,9 @@ class nilaiBulatBB {
 class nilaiBulatTB {
 
     var tinggiBadan: Int = 169
+        //pada method get ada value field. field adalah value dari variable tinggiBadan
         get() = field
+        // pada method set berisi value, yang mana value didapat dari field itu sendiri
         set(value) {
             field = if (value > 168)
                 169
@@ -65,5 +69,10 @@ class nilaiBulatTB {
         }
 }
 
+/**
+ * Program sederhana terkait seleksi masuk TNI untuk proses seleksi dengan menggunakan method getter and setter
+ * untuk mengambil data dari satu variable, kemudian data tadi diset serta diberi validasi
+ * apakah data lebih/kurang dari value yang ditentukan.
+ */
 
 
