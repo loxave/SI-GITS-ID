@@ -1,4 +1,4 @@
-package assisgnmentGITS
+package assignmentGITS
 
 import java.util.*
 
